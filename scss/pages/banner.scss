@@ -1,0 +1,24 @@
+.banner{
+    background-image: url("../images/banner.svg");
+    background-color: #cccccc;
+    width: 100%;
+    height: 600px;
+    background-size: auto;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 60px;
+    h1{
+        font-family: $glaho_web_caps;
+        color: #ffffff;
+        font-size: 40px;
+    }
+    h5{
+        font-family: $nino_mkhedruli;
+        color: #ffffff;
+        font-size: 30px;
+    }
+  }

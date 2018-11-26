@@ -1,0 +1,21 @@
+.h-f-container{
+    ul{
+        width: 600px;
+        display: flex;
+        justify-content: space-between;
+        font-family: $glaho_web_caps;
+        text-transform: uppercase;
+        a{
+            &:hover{
+                color: $hover;
+            }
+        }
+    }
+}
+// .header{
+//     height: 100px;
+//     width: 100%;
+//     background-color: white;
+//     position: fixed;
+//     z-index: 5;
+// }
