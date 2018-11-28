@@ -15,24 +15,31 @@
     justify-content: space-between;
 }
 .wrap{
+    display: flex;
     flex-wrap: wrap;
 }
-body{
-    h4{
-        font-family: $glaho_web_caps;
-        color: #000000;
-        font-weight: bold;
-    }
-}
+// .container{
+//     padding: 0 30px;
+// }
 .container{
     max-width: 1140px;
     width: 100%;
-    margin: 0 auto;
+    margin: 30px auto;
     text-align: center;
     h4{
         font-family: $glaho_web_caps;
         font-size: 24px;
-        margin: 10px 0 60px 0;
+        margin-bottom: 60px;
+        color: #000000;
+        font-weight: bold;
+        &::after{
+            content: "";
+            display: block;
+            margin: 0 auto;
+            width: 9%;
+            padding-top: 10px;
+            border-bottom: 2px solid black;
+        }
     }
 }
 .space-around{

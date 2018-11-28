@@ -2,25 +2,28 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>ATOMWEB</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
 <!-- header section -->
-<div class="header">
-    <header class="h-f-container">
+<div class="headerFixed">
+    <header class="h-f-container space-between wrap">
         <a href="#"><img src="images/logoBlack.png" alt="logo"></a>
-            <ul class="space-between wrap">
-                <li><a href="#">მთავარი</a></li>
-                <li><a href="#">რას ვაკეთებ</a></li>
-                <li><a href="#">ნამუშევრები</a></li>
-                <li><a href="#">ჩემ შესახებ</a></li>
-                <li><a href="#">კონტაქტი</a></li>
-            </ul>
-        </div>
-    </header>
+                <ul class="mainNav space-between wrap">
+                    <li><a href="#" class="active">მთავარი</a></li>
+                    <li><a href="#">რას ვაკეთებ</a></li>
+                    <li><a href="#">ნამუშევრები</a></li>
+                    <li><a href="#">ჩემ შესახებ</a></li>
+                    <li><a href="#">კონტაქტი</a></li>
+                </ul>
+            <span class="navDrop" id="js-navbar">
+                    <i class="fas fa-bars"></i>
+            </span>
+    </div>
+</header>
 <!-- header section end -->
 <!-- banner section -->
     <section class="banner">
@@ -30,25 +33,27 @@
 <!-- banner section end -->
 <!-- service section -->
     <section class="container">
-        <h4>რას ვაკეთებ</h4>
+        <div class="header">
+            <h4>რას ვაკეთებ</h4>
+        </div>
         <div class="service space-around wrap">
             <div class="service-box">
-                <img src="images/ideaIcon.png">
+                <div class="img"><img src="images/ideaIcon.png"></div>
                 <h6>იდეა</h6>
                 <p>ლორემ იპსუმ მოსაქმე დოკუმენტური ბღავილი გავშეშდები გველი დაიღვარა ხაზებს</p>
             </div>
                 <div class="service-box">
-                    <img src="images/designIcon.png">
+                    <div class="img"><img src="images/designIcon.png"></div>
                     <h6>დიზაინი</h6>
                     <p>ლორემ იპსუმ მოსაქმე დოკუმენტური ბღავილი გავშეშდები გველი დაიღვარა ხაზებს</p>
                 </div>
                     <div class="service-box">
-                        <img src="images/programmingIcon.png">
+                        <div class="img"><img src="images/programmingIcon.png"></div>
                         <h6>პროგრამირება</h6>
                         <p>ლორემ იპსუმ მოსაქმე დოკუმენტური ბღავილი გავშეშდები გველი დაიღვარა ხაზებს</p>
                     </div>
                         <div class="service-box">
-                            <img src="images/supportIcon.png">
+                            <div class="img"><img src="images/supportIcon.png"></div>
                             <h6>მხარდაჭერა </h6>
                             <p>ლორემ იპსუმ მოსაქმე დოკუმენტური ბღავილი გავშეშდები გველი დაიღვარა ხაზებს</p>
                         </div>              
@@ -57,29 +62,130 @@
 <!-- service section end -->
 <!-- myWorks section -->
     <section class="container">
-        <h4>ჩემი ნამუშევრები</h4>
+            <div class="header">
+                <h4>ჩემი ნამუშევრები</h4>
+            </div>
         <div class="space-around wrap myWorksBox">
             <div class="myWorks">
                 <img src="images/myWorks1.svg">
+                <a href="#">
+                    <div class="overlay">
+                        <div class="overlayText">
+                            <img src="images/hoverIcon.png">
+                            <h6>ვებ სტუდიოს ვებგვერდი</h6>
+                        </div>
+                    </div>
+                </a>
             </div>
                 <div class="myWorks">
                     <img src="images/myWorks2.svg">
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="overlayText">
+                                    <img src="images/hoverIcon.png">
+                                    <h6>ვებ სტუდიოს ვებგვერდი</h6>
+                                </div>
+                            </div>
+                        </a>   
                 </div>
                     <div class="myWorks">
                         <img src="images/myWorks3.svg">
+                            <a href="#">
+                                <div class="overlay">
+                                    <div class="overlayText">
+                                        <img src="images/hoverIcon.png">
+                                        <h6>ვებ სტუდიოს ვებგვერდი</h6>
+                                    </div>
+                                </div>
+                            </a>
                     </div>
                         <div class="myWorks">
                             <img src="images/myWorks1.svg">
+                                <a href="#">
+                                    <div class="overlay">
+                                        <div class="overlayText">
+                                            <img src="images/hoverIcon.png">
+                                            <h6>ვებ სტუდიოს ვებგვერდი</h6>
+                                        </div>
+                                    </div>
+                                </a>
                         </div>
                             <div class="myWorks">
                                 <img src="images/myWorks2.svg">
+                                    <a href="#">
+                                        <div class="overlay">
+                                            <div class="overlayText">
+                                                <img src="images/hoverIcon.png">
+                                                <h6>ვებ სტუდიოს ვებგვერდი</h6>
+                                            </div>
+                                        </div>
+                                    </a>
                             </div>
                                 <div class="myWorks">
                                     <img src="images/myWorks3.svg">
+                                        <a href="#">
+                                            <div class="overlay">
+                                                <div class="overlayText">
+                                                    <img src="images/hoverIcon.png">
+                                                    <h6>ვებ სტუდიოს ვებგვერდი</h6>
+                                                 </div>
+                                            </div>
+                                        </a>
                                 </div>
         </div>
     </section>
 <!-- myWorks section end -->
+<!-- aboutme section-->
+<section class="aboutMe-background">
+    <div class="container flex space-between">
+        <div class="aboutMe-img">
+            <img src="images/aboutMe.svg">
+        </div>
+        <div class="aboutMe-text">
+            <h3>ჩემ შესახებ</h3>
+            <p>განუხილავს ხვრინავს დაასწრეს ბრესონისთვის გამოასახლეს მზემოკიდებული სახარინს ასიოდე შეგარჩენდა, მომხდარაო ქალებზე გარშემომყოფების. გამოასახლეს ჩაყვითლებულ ჯავარსავით დასწავლა გავდა დროზედ მიბრძანებს სტუმრობდა დაჰკვალა გარშემომყოფების. პუპი დამამწვდია დამატკბობელ ბეტს გააქვს აყვნენ მოხვდეთ. ფერადოვანი დაასწრეს თეტჩერმა გაგვაკვირვეს კომისიაც აღწერილ.
+            <br>
+            <br>
+            ზაურიც გერჩივნოს გამოცდი დაძვრა, კარებთან, მოსდგომოდა პათეტიკამ ჰიუს უჩინარ, მურდალო გაეშვა იანელთა ზნაიუ. ვასწავლით ვინაღვლიდი სახაროვი იტრიალებდა მიწებისა, ელიტური, მაჭამეთ იგრძნობთ წამოვიყვირე. ზაურიც მნიშვნელობაო დაოსებული ჩარდახიდან, მურდალო წკრიალი ხავერდის, შეჰფერით მიწებისა სარწმუნოებაა ქერქები ჰიუს ცოტაოდენიც თანაბრად დისტანციიდან. დაძვრა შეიტანა აღფრთოვანების შადრევანს ასლან ვუბრძანე. ძლიერებით ყანა გერჩივნოს მოსდგომოდა ცოტაოდენიც ელიტური, აღფრთოვანების დაოსებული იმათი ნაკუწი.</p>
+        </div>
+    </div>
+</section>
+<!-- aboutme section end -->
+<!-- contact section -->
+<section class="contact-background">
+    <div class="container">
+        <div class="contact">
+            <h2>კონტაქტი</h2>
+        </div>
+            <div class="contact">
+                <form action="/action_page.php">
+                    <div class="inline-block t-contact">
+                        <label for="fname"></label>
+                        <input type="text" id="fname" name="firstname" placeholder="სახელი">
+                    </div>
+                    <div class="inline-block">
+                        <label for="lname"></label>
+                        <input type="text" id="lname" name="lastname" placeholder="ელ-ფოსტა">
+                    </div>
+                    <div>
+                        <label for="subject"></label>
+                        <textarea id="subject" name="subject" placeholder="შეტყობინება" style="height:160px;width:495px"></textarea>
+                    </div>
+                        <input type="submit" value="გაგზავნა">
+                        <span>კითხვებისთვის გამოიყენეთ ფორმა</span>
+                    </form>
+                </div>
+        </div>
+</section>
+<!-- contact section end -->
+<!-- footer -->
+<footer>
+    <div class="h-f-container">
+        <span>ყველა უფლება დაცულია © 2018 სახელი გვარი</span>
+        <img src="images/logoWhite.png">
+    </div>
+</footer>
 <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 </body>
 </html>
+

@@ -1,9 +1,47 @@
+.overlay{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #B8EDF8;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+}
 .myWorks{
+        position: relative;
         max-width: 362px;
         width: 100%;
         height: 200px;
         margin-bottom: 30px;
+        img{
+            border: 2px solid #B8EDF8;
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        &:hover .overlay{
+            bottom: 0;
+            height: 100%;
+        }
 }
-.myWorksBox{
-    height: 430px;
+.overlayText{
+    img{
+        height: 45px;
+        width: 45px; 
+        margin-left: 40%;
+    }
+    h6{
+        font-size: 18px;
+        font-family: $glaho_web_caps;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    color: white;
+    position: absolute;
 }
