@@ -14,15 +14,13 @@
     }
 }
 input[type=text], select, textarea {
-    max-width: 435px;
+    max-width: 95%;
     width: 100%;
     padding: 12px;
     background-color: $hover;
-    border: 1px solid black;
-    margin-top: 6px;
-    margin-bottom: 16px;
+    border: 2px solid black;
     resize: vertical;
-    margin-right: 10px;
+    margin: 6px 10px 16px auto;
 }
 
 input[type=submit] {
@@ -53,6 +51,18 @@ input[type=submit] {
                 width: 80%;
                 padding-top: 10px;
                 border-bottom: 2px solid black;
+        }
+    }
+}
+@media (max-width: 995px){
+    input[type=text], select, textarea{
+        max-width: 95%;
+        width: 100%;
+        // margin-right: 0;
+    }
+    .contact{
+        span{
+            margin-right: 220px
         }
     }
 }

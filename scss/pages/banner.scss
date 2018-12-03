@@ -22,3 +22,13 @@
         font-size: 30px;
     }
   }
+  @media (max-width: 580px){
+      .banner{
+          h1{
+              font-size: 24px;
+          }
+          h5{
+              font-size: 20px;
+          }
+      }
+  }
