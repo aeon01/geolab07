@@ -1,60 +1,75 @@
-.h-f-container{
-    padding: 0 30px;
-    ul{
-        width: 600px;
-        display: flex;
-        justify-content: space-between;
-        font-family: $glaho_web_caps;
-        text-transform: uppercase;
-        a{
-            &:hover{
-                color: $hover;
-            }
-        }
-    }
-}
 .headerFixed{
-    // height: 100px;
     width: 100%;
     background-color: white;
     position: fixed;
     z-index: 5;
     box-shadow: 0px 0px 5px#7EC4CE;
-}
-.toggle{
-    display: none;
-}
-@media (max-width: 995px){
     .h-f-container{
-        ul{
-            // width: 100%;
-            display: none;
-            // background-color: $hover;
-            a{
-                &:hover{
-                    color: white;
+        padding: 0 20px;
+        .navBar{
+             ul{  
+                width: 600px;
+                display: flex;
+                justify-content: space-between;
+                font-family: $glaho_web_caps;
+                text-transform: uppercase; 
+                li{
+                    a{
+                        &:hover{
+                            color: $hover;
+                        }
+                    }
                 }
             }
         }
-        ul li{
-            text-align: center;
-            display: block;
-            padding: 20px;
+        .toggle{
+            display: none; 
+            font-size: 24px; 
         }
     }
-    .navBar{
-        display: block;
-        font-size: 24px;
-        color: black;
-    }
-    .active{
-        display: block;
-        text-align: center;
+}
+@media (max-width: 995px){
+    .headerFixed{
+        position: relative;
+       .h-f-container{
+           .navBar{
+               position: absolute;
+               width: 100%;
+               height: calc(860px - 50px);
+               top: 100px;
+               left: -150%;
+               transition: .5s linear;
+               background: $hover;
+               &.active{
+                   left: 0;
+                   display: block;
+               }
+               ul{
+                   display: block;
+                   text-align: center;
+                   width: 100%;
+                   li{
+                       padding-top: 30px;
+                       font-size: 20px;
+                       font-family: $glaho_web_caps;
+                       padding-top: 50px;
+                       &:nth-child(1){
+                           padding-top: 150px;
+                       }
+                        a{
+                            
+                            &:hover{
+                                color: white;
+                            }
+                        }
+                   }
+               }
+           }
+           .toggle{
             display: block;
-            padding: 20px;
-    }
-    .toggle{
-        display: block;
-        text-align: right;
+            text-align: right;
+            color: $hover;
+            }
+       }    
     }
 }
