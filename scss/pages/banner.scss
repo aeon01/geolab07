@@ -32,3 +32,10 @@
           }
       }
   }
+  @media (max-width: 350px){
+      .banner{
+          h1,h5{
+              line-height: 1.2;
+          }
+      }
+  }

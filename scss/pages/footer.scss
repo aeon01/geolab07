@@ -6,3 +6,15 @@ footer{
         color: white;
     }
 }
+@media (max-width: 500px){
+    .h-f-container{
+        img{
+            width: 100px;
+        }
+    }
+    footer{
+        span{
+            font-size: 10px;
+        }
+    }
+}

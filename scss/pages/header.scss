@@ -14,7 +14,7 @@
     }
 }
 .headerFixed{
-    height: 100px;
+    // height: 100px;
     width: 100%;
     background-color: white;
     position: fixed;
@@ -23,26 +23,38 @@
 }
 .toggle{
     display: none;
-    text-align: right;
 }
 @media (max-width: 995px){
     .h-f-container{
         ul{
-            width: 100%;
+            // width: 100%;
             display: none;
+            // background-color: $hover;
+            a{
+                &:hover{
+                    color: white;
+                }
+            }
         }
-        li{
+        ul li{
             text-align: center;
             display: block;
             padding: 20px;
         }
     }
-    .toggle{
+    .navBar{
         display: block;
         font-size: 24px;
-        color: $hover;
+        color: black;
     }
     .active{
         display: block;
+        text-align: center;
+            display: block;
+            padding: 20px;
+    }
+    .toggle{
+        display: block;
+        text-align: right;
     }
 }

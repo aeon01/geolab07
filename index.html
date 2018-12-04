@@ -14,7 +14,7 @@
         <a href="#"><img src="images/logoBlack.png" alt="logo"></a>
                 <nav class="navBar" id="myNav">
                         <div class="toggle">
-                                <i class="fas fa-bars toggle"></i>
+                                <i class="fas fa-bars menu" aria-hidden="true"></i>
                         </div>
                     <ul class="mainNav space-between wrap">
                         <li><a href="#">მთავარი</a></li>
@@ -173,7 +173,7 @@
                     </div>
                     <div>
                         <label for="subject"></label>
-                        <textarea id="subject" name="subject" placeholder="შეტყობინება" style="height:160px;width:495px"></textarea>
+                        <textarea id="subject" name="subject" placeholder="შეტყობინება" style="height:150px"></textarea>
                     </div>
                         <input type="submit" value="გაგზავნა">
                         <span>კითხვებისთვის გამოიყენეთ ფორმა</span>
@@ -192,7 +192,7 @@
 <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 <script type="text/javascript">
     $(document).ready(function(){
-        $("toggle").click(function(){
+        $(".menu").click(function(){
             $("ul").toggleClass("active");
         })
     })
